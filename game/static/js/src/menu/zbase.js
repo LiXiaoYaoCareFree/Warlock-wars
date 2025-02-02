@@ -16,10 +16,10 @@ class AcGameMenu {
             设置
         </div>
     </div>
-<div/>
+</div>
 `);
         this.root.$ac_game.append(this.$menu);
-        this.$single_mode = this.$menu.find('.ac-game-menu-item-single-mode');
+        this.$single_mode = this.$menu.find('.ac-game-menu-field-item-single-mode');
         this.$multi_mode = this.$menu.find('.ac-game-menu-field-item-multi-mode');
         this.$settings = this.$menu.find('.ac-game-menu-field-item-settings');
 
@@ -44,13 +44,12 @@ class AcGameMenu {
         });
     }
 
-    show() {
+    show() {  // 显示menu界面
         this.$menu.show();
     }
 
-    hide() {
+    hide() {  // 关闭menu界面
         this.$menu.hide();
     }
 }
-
 
